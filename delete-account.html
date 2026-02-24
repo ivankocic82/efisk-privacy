@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFiSk - Brisanje naloga</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+        h2 { color: #2e7d32; margin-top: 30px; }
+        .step { background: #f5f5f5; padding: 15px; border-radius: 8px; margin: 10px 0; }
+        .step-number { font-weight: bold; color: #2e7d32; font-size: 1.2em; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #4CAF50; color: white; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { text-decoration: none; color: #2e7d32; font-weight: bold; }
+    </style>
+    <script>
+        function showLang(lang) {
+            document.getElementById('sr').style.display = lang === 'sr' ? 'block' : 'none';
+            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="lang-switch">
+    <a href="#" onclick="showLang('sr')">Srpski</a> | <a href="#" onclick="showLang('en')">English</a>
+</div>
+
+<!-- SRPSKI -->
+<div id="sr">
+<h1>Brisanje naloga — eFiSk</h1>
+
+<h2>Kako da obrišete nalog i podatke</h2>
+
+<div class="step">
+    <span class="step-number">Korak 1:</span> Brisanje lokalnih podataka<br>
+    Otvorite aplikaciju → Podešavanja → Obriši sve podatke. Ovo trajno briše sve skenirane račune sa vašeg uređaja.
+</div>
+
+<div class="step">
+    <span class="step-number">Korak 2:</span> Odjava sa servera<br>
+    Podešavanja → Odjavi se. Ovo prekida sinhronizaciju sa serverom.
+</div>
+
+<div class="step">
+    <span class="step-number">Korak 3:</span> Brisanje naloga na serveru<br>
+    Pošaljite email na <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a> sa naslovom <strong>"Zahtev za brisanje eFiSk naloga"</strong> i navedite email adresu koju ste koristili pri registraciji. Vaš nalog i svi podaci na serveru biće obrisani u roku od 7 radnih dana.
+</div>
+
+<h2>Koji podaci se brišu</h2>
+<table>
+    <tr><th>Tip podataka</th><th>Brisanje</th></tr>
+    <tr><td>Fiskalni računi (lokalni)</td><td>Odmah (Korak 1)</td></tr>
+    <tr><td>Artikli i kategorije (lokalni)</td><td>Odmah (Korak 1)</td></tr>
+    <tr><td>Podešavanja aplikacije</td><td>Odmah (Korak 1)</td></tr>
+    <tr><td>Korisnički nalog na serveru</td><td>Do 7 radnih dana (Korak 3)</td></tr>
+    <tr><td>Sinhronizovani računi na serveru</td><td>Do 7 radnih dana (Korak 3)</td></tr>
+</table>
+
+<h2>Kontakt</h2>
+<p>Za pitanja o brisanju podataka: <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a></p>
+</div>
+
+<!-- ENGLISH -->
+<div id="en" style="display:none">
+<h1>Account Deletion — eFiSk</h1>
+
+<h2>How to delete your account and data</h2>
+
+<div class="step">
+    <span class="step-number">Step 1:</span> Delete local data<br>
+    Open the app → Settings → Delete All Data. This permanently deletes all scanned receipts from your device.
+</div>
+
+<div class="step">
+    <span class="step-number">Step 2:</span> Log out from server<br>
+    Settings → Log out. This stops synchronization with the server.
+</div>
+
+<div class="step">
+    <span class="step-number">Step 3:</span> Delete server account<br>
+    Send an email to <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a> with the subject <strong>"Request to delete eFiSk account"</strong> and include the email address you used during registration. Your account and all server data will be deleted within 7 business days.
+</div>
+
+<h2>What data is deleted</h2>
+<table>
+    <tr><th>Data type</th><th>Deletion</th></tr>
+    <tr><td>Fiscal receipts (local)</td><td>Immediately (Step 1)</td></tr>
+    <tr><td>Items and categories (local)</td><td>Immediately (Step 1)</td></tr>
+    <tr><td>App settings</td><td>Immediately (Step 1)</td></tr>
+    <tr><td>User account on server</td><td>Within 7 business days (Step 3)</td></tr>
+    <tr><td>Synced receipts on server</td><td>Within 7 business days (Step 3)</td></tr>
+</table>
+
+<h2>Contact</h2>
+<p>For data deletion inquiries: <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a></p>
+</div>
+
+</body>
+</html>
