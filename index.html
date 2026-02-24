@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFiSk - Politika privatnosti</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+        h2 { color: #2e7d32; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        .updated { color: #666; font-style: italic; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { text-decoration: none; color: #2e7d32; font-weight: bold; }
+        .section { margin-bottom: 20px; }
+        #sr, #en { display: none; }
+        #sr:target, #en:target { display: block; }
+        #sr { display: block; }
+    </style>
+    <script>
+        function showLang(lang) {
+            document.getElementById('sr').style.display = lang === 'sr' ? 'block' : 'none';
+            document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<div class="lang-switch">
+    <a href="#" onclick="showLang('sr')">Srpski</a> | <a href="#" onclick="showLang('en')">English</a>
+</div>
+
+<!-- SRPSKI -->
+<div id="sr">
+<h1>Politika privatnosti — eFiSk</h1>
+<p class="updated">Poslednje ažuriranje: 24. februar 2026.</p>
+
+<div class="section">
+<h2>1. Uvod</h2>
+<p>eFiSk ("aplikacija") je Android aplikacija za skeniranje QR kodova sa fiskalnih računa u Republici Srbiji. Aplikaciju razvija ISF Solutions ("mi", "nas"). Vaša privatnost nam je važna i posvećeni smo zaštiti vaših ličnih podataka.</p>
+</div>
+
+<div class="section">
+<h2>2. Podaci koje prikupljamo</h2>
+<h3>2.1 Podaci sa fiskalnih računa</h3>
+<p>Kada skenirate QR kod, aplikacija preuzima javno dostupne podatke sa portala Poreske uprave (SUF sistem):</p>
+<ul>
+    <li>Naziv i adresa prodavca, PIB</li>
+    <li>Datum, broj računa, stavke, iznosi, PDV</li>
+</ul>
+<p>Ovi podaci se čuvaju <strong>lokalno na vašem uređaju</strong>.</p>
+
+<h3>2.2 Email adresa (samo Premium/Gold korisnici)</h3>
+<p>Ako se registrujete za Premium ili Gold verziju, prikupljamo vašu email adresu radi kreiranja naloga za sinhronizaciju.</p>
+
+<h3>2.3 Podaci o kupovini</h3>
+<p>Za Pro i Premium pretplate, Google Play Billing obrađuje transakcije. Mi ne pristupamo vašim finansijskim podacima (broj kartice i sl.).</p>
+
+<h3>2.4 Identifikator za reklame</h3>
+<p>Besplatna verzija prikazuje reklame putem Google AdMob. AdMob može prikupljati Advertising ID vašeg uređaja u skladu sa <a href="https://policies.google.com/privacy">Google-ovom politikom privatnosti</a>.</p>
+</div>
+
+<div class="section">
+<h2>3. Kako koristimo podatke</h2>
+<ul>
+    <li><strong>Fiskalni računi</strong>: Čuvaju se lokalno za vaš pregled, statistiku i analizu potrošnje.</li>
+    <li><strong>Email</strong>: Koristi se isključivo za kreiranje naloga za sinhronizaciju sa serverom (EspoCRM).</li>
+    <li><strong>Advertising ID</strong>: Koristi ga Google AdMob za prikazivanje reklama (samo besplatna verzija).</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. Sinhronizacija sa serverom</h2>
+<p>Premium i Gold korisnici mogu opciono sinhronizovati račune sa našim serverom (EspoCRM). Sinhronizacija je <strong>opciona</strong> — zahteva eksplicitnu registraciju. Podaci se prenose putem HTTPS enkripcije.</p>
+</div>
+
+<div class="section">
+<h2>5. Deljenje podataka sa trećim stranama</h2>
+<p>Ne prodajemo vaše podatke. Podaci se dele samo sa:</p>
+<ul>
+    <li><strong>Google AdMob</strong>: Advertising ID za prikazivanje reklama (besplatna verzija)</li>
+    <li><strong>Google Play Billing</strong>: Obrada kupovina (Pro/Premium)</li>
+    <li><strong>Portal Poreske uprave (SUF)</strong>: Preuzimanje javno dostupnih podataka sa računa</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>6. Čuvanje i bezbednost podataka</h2>
+<ul>
+    <li>Fiskalni računi se čuvaju lokalno u šifrovanoj bazi podataka na uređaju.</li>
+    <li>Osetljivi podaci (tokeni, lozinke) čuvaju se u Android EncryptedSharedPreferences.</li>
+    <li>Sva komunikacija sa serverom koristi HTTPS enkripciju.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>7. Vaša prava</h2>
+<p>Imate potpunu kontrolu nad svojim podacima:</p>
+<ul>
+    <li><strong>Brisanje</strong>: Podešavanja → Obriši sve podatke (trajno briše sve lokalne podatke)</li>
+    <li><strong>Izvoz</strong>: Podešavanja → Izvezi podatke (CSV format)</li>
+    <li><strong>Odjava</strong>: Podešavanja → Odjavi se (prekida sinhronizaciju sa serverom)</li>
+    <li><strong>Reklame</strong>: Možete povući saglasnost za personalizovane reklame u bilo kom trenutku</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>8. Deca</h2>
+<p>Aplikacija nije namenjena deci mlađoj od 18 godina. Ne prikupljamo svesno podatke od maloletnih lica.</p>
+</div>
+
+<div class="section">
+<h2>9. Izmene politike</h2>
+<p>Možemo ažurirati ovu politiku privatnosti. Datum poslednjeg ažuriranja je naveden na vrhu stranice.</p>
+</div>
+
+<div class="section">
+<h2>10. Kontakt</h2>
+<p>Za pitanja o privatnosti kontaktirajte nas:</p>
+<p>Email: <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a><br>
+Web: www.isfsolutions.rs</p>
+</div>
+</div>
+
+<!-- ENGLISH -->
+<div id="en">
+<h1>Privacy Policy — eFiSk</h1>
+<p class="updated">Last updated: February 24, 2026</p>
+
+<div class="section">
+<h2>1. Introduction</h2>
+<p>eFiSk ("app") is an Android application for scanning QR codes from fiscal receipts in the Republic of Serbia. The app is developed by ISF Solutions ("we", "us"). Your privacy is important to us and we are committed to protecting your personal data.</p>
+</div>
+
+<div class="section">
+<h2>2. Data We Collect</h2>
+<h3>2.1 Fiscal Receipt Data</h3>
+<p>When you scan a QR code, the app retrieves publicly available data from the Tax Administration portal (SUF system):</p>
+<ul>
+    <li>Seller name and address, tax ID</li>
+    <li>Date, receipt number, items, amounts, VAT</li>
+</ul>
+<p>This data is stored <strong>locally on your device</strong>.</p>
+
+<h3>2.2 Email Address (Premium/Gold users only)</h3>
+<p>If you register for Premium or Gold version, we collect your email address to create a synchronization account.</p>
+
+<h3>2.3 Purchase Data</h3>
+<p>For Pro and Premium subscriptions, Google Play Billing processes transactions. We do not access your financial data (card numbers, etc.).</p>
+
+<h3>2.4 Advertising Identifier</h3>
+<p>The free version displays ads through Google AdMob. AdMob may collect your device's Advertising ID in accordance with <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+</div>
+
+<div class="section">
+<h2>3. How We Use Data</h2>
+<ul>
+    <li><strong>Fiscal receipts</strong>: Stored locally for your review, statistics, and spending analysis.</li>
+    <li><strong>Email</strong>: Used solely to create a synchronization account on our server (EspoCRM).</li>
+    <li><strong>Advertising ID</strong>: Used by Google AdMob to display ads (free version only).</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4. Server Synchronization</h2>
+<p>Premium and Gold users can optionally synchronize receipts with our server (EspoCRM). Synchronization is <strong>optional</strong> — it requires explicit registration. Data is transmitted using HTTPS encryption.</p>
+</div>
+
+<div class="section">
+<h2>5. Third-Party Data Sharing</h2>
+<p>We do not sell your data. Data is shared only with:</p>
+<ul>
+    <li><strong>Google AdMob</strong>: Advertising ID for displaying ads (free version)</li>
+    <li><strong>Google Play Billing</strong>: Purchase processing (Pro/Premium)</li>
+    <li><strong>Tax Administration Portal (SUF)</strong>: Retrieval of publicly available receipt data</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>6. Data Storage and Security</h2>
+<ul>
+    <li>Fiscal receipts are stored locally in an encrypted database on the device.</li>
+    <li>Sensitive data (tokens, passwords) is stored in Android EncryptedSharedPreferences.</li>
+    <li>All server communication uses HTTPS encryption.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>7. Your Rights</h2>
+<p>You have full control over your data:</p>
+<ul>
+    <li><strong>Deletion</strong>: Settings → Delete All Data (permanently deletes all local data)</li>
+    <li><strong>Export</strong>: Settings → Export Data (CSV format)</li>
+    <li><strong>Logout</strong>: Settings → Log out (stops server synchronization)</li>
+    <li><strong>Ads</strong>: You can withdraw consent for personalized ads at any time</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>8. Children</h2>
+<p>The app is not intended for children under 18. We do not knowingly collect data from minors.</p>
+</div>
+
+<div class="section">
+<h2>9. Policy Changes</h2>
+<p>We may update this privacy policy. The date of the last update is listed at the top of this page.</p>
+</div>
+
+<div class="section">
+<h2>10. Contact</h2>
+<p>For privacy inquiries, contact us:</p>
+<p>Email: <a href="mailto:info@isfsolutions.rs">info@isfsolutions.rs</a><br>
+Web: www.isfsolutions.rs</p>
+</div>
+</div>
+
+</body>
+</html>
